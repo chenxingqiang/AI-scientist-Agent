@@ -1,4 +1,7 @@
 <div align="center">
+  <a href="https://github.com/chenxingqiang/AI-scientist-Agent">
+    <img src="docs/logo.svg" width="200" alt="AI Scientist Agent Logo" />
+  </a>
   <h1>
     <b>🤖 AI Scientist Agent</b><br>
     <b>Cost-Effective Scientific Research Automation</b><br>
