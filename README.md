@@ -250,7 +250,48 @@ This error typically occurs when the AI Scientist-v2 attempts to load or run a m
 The tree search component implemented within the `ai_scientist` directory is built on top of the [AIDE](https://github.com/WecoAI/aideml) project. We thank the AIDE developers for their valuable contributions and for making their work publicly available.
 
 
-## Star History
+## 🚀 Quick Start
 
-[![Star History Chart](https://api.star-history.com/svg?repos=SakanaAI/AI-Scientist-v2&type=Date)](https://star-history.com/#SakanaAI/AI-Scientist-v2&Date)
+### 1. Set up Environment Variables
+```bash
+export DEEPSEEK_API_KEY="your-deepseek-api-key"
+export SERPAPI_KEY="your-serpapi-key"  # Optional but recommended
+```
+
+### 2. Generate Research Ideas
+```bash
+python ai_scientist/perform_ideation_temp_free.py \
+  --workshop-file "ai_scientist/ideas/your_topic.md" \
+  --model deepseek-chat \
+  --max-num-generations 5
+```
+
+### 3. Run Experiments
+```bash
+python launch_scientist_bfts.py \
+  --load_ideas "ai_scientist/ideas/your_topic.json" \
+  --load_code \
+  --add_dataset_ref
+```
+
+### 4. Results
+- 📊 Find experiment results in `experiments/timestamp_ideaname/`
+- 📈 View tree visualization at `logs/0-run/unified_tree_viz.html`
+- 📄 Generated paper will be in the experiment directory
+
+---
+
+## 💫 Support the Project
+
+If this project helps your research, please:
+- ⭐ Star this repository
+- 🐛 Report issues or suggest improvements
+- 🤝 Contribute enhancements
+- 📖 Share with other researchers
+
+**Repository**: [https://github.com/chenxingqiang/AI-scientist-Agent](https://github.com/chenxingqiang/AI-scientist-Agent)
+
+---
+
+*Built with ❤️ by researchers, for researchers. Making high-quality automated research accessible to everyone.*
 
